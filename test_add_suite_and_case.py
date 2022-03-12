@@ -7,6 +7,7 @@ def app(request):
     request.addfinalizer(fixture.destroy)
     return fixture
 
+
 def test_add_suite_add_case(app):
     app.open_home_page()
     app.login()
