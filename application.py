@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
+import time
 
 
 class Application:
@@ -62,7 +63,7 @@ class Application:
     def create_suite(self):
         wd = self.wd
         wd.find_element_by_id("jazz_ui_MenuPopup_8").click()
-        wd.find_element_by_id("jazz_ui_menu_MenuItem_7_text").click()
+        wd.find_element_by_id("jazz_ui_menu_MenuItem_8_text").click()
 
 
     def login(self):
